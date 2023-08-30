@@ -3,10 +3,13 @@ function media(){
     var val2= document.getElementById("valor2").value;
     var result=(parseInt(val1) + parseInt(val2))/2;
     
-    if(result >6)
-    alert ("Sua média foi: " + result + " você está aprovado");
-    else if(result==10)
+   
+    if(result==10)
     alert ("Sua média foi:" + result + "Você é um gênio!");
+    else if(result == 0)
+    alert ("Sua média foi:" + result+" Você é um burro")
+     else if(result >6)
+    alert ("Sua média foi: " + result + " você está aprovado");
     else
     alert ("Sua média foi: " + result + " você está Reprovado");
 
